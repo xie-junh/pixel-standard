@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { CropMatcherTab } from './components/CropMatcherTab';
 import { PixelScalerTab } from './components/PixelScalerTab';
@@ -120,7 +121,9 @@ export default function App() {
 
       {/* Floating Copy Feedback Toast */}
       <CopyToast message={toastMessage} />
+      
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
-
