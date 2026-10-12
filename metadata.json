@@ -1,0 +1,6 @@
+{
+  "name": "PixelStandard 像素标准与比例换算工具",
+  "description": "专业图片与视频像素分辨率标准化、比例匹配与总像素缩放计算器。支持裁剪边长标准匹配、固定比例整除倍数（2/4/8/16/32/64）微调及总像素量缩放计算。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
