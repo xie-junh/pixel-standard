@@ -505,4 +505,8 @@ export const translations = {
   },
 } as const;
 
-export type TranslationSchema = typeof translations.zh;
+type DeepString<T> = {
+  readonly [K in keyof T]: T[K] extends object ? DeepString<T[K]> : string;
+};
+
+export type TranslationSchema = DeepString<typeof translations.zh>;
